@@ -6,10 +6,13 @@ import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
+      {" "}
+      {/* Prevent horizontal scrolling */}
       <div className="bg-[#121414] py-[24px] fixed w-full z-10">
         <Container>
-          <div className=" flex ">
+          <div className="flex justify-between items-center w-full max-w-full px-5">
+            {/* Left section (hidden on small screens) */}
             <div className="xl:w-[35%] hidden xl:block">
               <h2 className="text-[32px] font-bold text-white">
                 Daryl{" "}
@@ -18,19 +21,20 @@ const App = () => {
                 </span>
               </h2>
               <p className="text-[18px] font-normal text-[#C2C2C2]">
-                UI/UX designer           
+                UI/UX designer
               </p>
             </div>
-            <div className="flex justify-between items-center bg-[#121414] xl:w-[70%] w-full px-5">
-              <div className="">
-                <div className="flex items-center gap-[16px]">
-                  <div className=" w-[40px] h-[40px] bg-[#F89222] rounded-[5px] flex items-center justify-center">
-                    <TiHomeOutline className="text-white text-[24px]" />
-                  </div>
-                  <h2 className="text-[24px] font-bold text-white ">Home</h2>
+            {/* Right section (responsive) */}
+            <div className="flex justify-between items-center w-full xl:w-[70%] px-5">
+              {/* Home icon and title */}
+              <div className="flex items-center gap-[16px]">
+                <div className="w-[40px] h-[40px] bg-[#F89222] rounded-[5px] flex items-center justify-center">
+                  <TiHomeOutline className="text-white text-[24px]" />
                 </div>
+                <h2 className="text-[24px] font-bold text-white">Home</h2>
               </div>
-              <button className="w-[128px] h-[45px] border-[1px] rounded-[50px] border-[#F89222] text-[#F5BD4D] hover:border-white duration-200 hover:text-white">
+              {/* Talk to Me button */}
+              <button className="xl:w-[128px] xl:h-[45px] w-[100px] h-[30px] border-[1px] rounded-[50px] border-[#F89222] text-[#F5BD4D] hover:border-white duration-200 hover:text-white text-[15px] sm:w-[128px] sm:h-[45px]">
                 Talk To Me
               </button>
             </div>

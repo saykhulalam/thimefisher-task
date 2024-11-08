@@ -15,7 +15,7 @@ import { FaTwitter } from "react-icons/fa";
 const Profile = () => {
   return (
     <div>
-      <div className=" flex xl:mt-[120px] mt-[95px] xl:fixed z-10">
+      <div className=" flex xl:mt-[120px] mt-[90px] xl:fixed z-10">
         <div className="flex flex-col xl:gap-[40px] gap-5 px-[30px] mt-8 xl:mt-[70px]">
           <div className=" w-[45px] h-[45px] hover:border-[1px] flex   items-center justify-center rounded-full">
             <TiHomeOutline className="text-white text-[35px] hover:text-[#F5BD4D] " />
