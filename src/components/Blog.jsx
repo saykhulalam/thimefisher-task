@@ -72,7 +72,7 @@ const Blog = () => {
         Blog
       </h2>
 
-      <div className="grid grid-cols-1 xl:grid-cols-2 sm:grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 xl:grid-cols-2 sm:grid-cols-2 gap-6">
         {blogPosts.slice(0, visibleCount).map((post, index) => (
           <BlogCard
             key={index}
