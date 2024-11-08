@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./components/Container";
 import { TiHomeOutline } from "react-icons/ti";
 import Hero from "./components/Hero";
+import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         </Container>
       </div>
       <Hero />
+      <ScrollToTop className="pl-1" smooth />
     </div>
   );
 };
