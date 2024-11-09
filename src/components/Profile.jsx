@@ -35,7 +35,7 @@ const Profile = () => {
         </div>
         <div className="w-[390px] bg-black pl-5 pb-2">
           <Image src={profileimage} />
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center gap-3">
             <div className=" w-[32px] h-[32px] bg-[#121414] text-[10px] rounded-full flex items-center justify-center text-white">
               <TfiFacebook />
             </div>
